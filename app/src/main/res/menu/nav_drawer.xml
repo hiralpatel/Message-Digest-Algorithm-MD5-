@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/nav_menu_info"
+        android:icon="@drawable/ic_info"
+        android:title="Information" />
+    <item
+        android:id="@+id/nav_menu_hint"
+        android:icon="@drawable/ic_hint"
+        android:title="Hint" />
+    <item
+        android:id="@+id/nav_menu_task"
+        android:icon="@drawable/ic_task"
+        android:title="Task" />
+    <item
+        android:id="@+id/nav_menu_verify"
+        android:icon="@drawable/ic_verify"
+        android:title="Submit Flag" />
+    <item
+        android:id="@+id/nav_menu_other_apps"
+        android:icon="@drawable/ic_more_apps"
+        android:title="Other Apps" />
+</menu>

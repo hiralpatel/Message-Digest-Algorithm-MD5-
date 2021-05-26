@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="hpandro.java.infosec.md5.activity.TaskActivity">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbarTask"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="?attr/colorPrimary"
+        app:navigationIcon="@drawable/ic_back"
+        app:popupTheme="@style/ThemeOverlay.AppCompat.Light"
+        app:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+        app:titleTextAppearance="@style/TextAppearance.AppCompat.Subhead"
+        app:titleTextColor="@android:color/white" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@id/flagSubmit"
+        android:layout_below="@id/toolbarTask"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <ProgressBar
+            android:id="@+id/progress"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:scaleX="0.5"
+            android:scaleY="0.5"
+            android:visibility="gone" />
+
+        <TextView
+            android:id="@+id/tvFlag"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/_8sdp"
+            android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+            android:textColor="@color/black"
+            android:textIsSelectable="true" />
+
+        <Button
+            android:id="@+id/btnCheckFlag"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_16sdp"
+            android:background="@drawable/btn_drawable"
+            android:minWidth="150dp"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp"
+            android:text="Check MD5 Flag"
+            android:textAppearance="@style/TextAppearance.AppCompat.Button"
+            android:textColor="@android:color/white" />
+
+        <com.google.android.ads.nativetemplates.TemplateView
+            android:id="@+id/nativeTemplateView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_16sdp"
+            android:visibility="gone"
+            app:gnt_template_type="@layout/gnt_small_template_view" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/flagSubmit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:autoLink="web"
+        android:gravity="center"
+        android:padding="8dp"
+        android:text="@string/ctf"
+        android:textAppearance="@style/TextAppearance.AppCompat.Caption"
+        android:textColor="@color/black" />
+</RelativeLayout>
